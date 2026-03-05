@@ -88,29 +88,6 @@
       background: rgba(0,0,0,0.1);
       top: 36px; left: 14px;
     }
-
-    /* ── vinyl record ── */
-    .vinyl {
-      position: fixed;
-      bottom: 28px; right: 48px;
-      width: 72px; height: 72px;
-      border-radius: 50%;
-      background: conic-gradient(#1e1b4b, #312e81, #1e1b4b, #312e81, #1e1b4b);
-      border: 3px solid rgba(255,255,255,0.08);
-      z-index: 1;
-      animation: spin 6s linear infinite;
-      opacity: 0.7;
-    }
-    .vinyl::before {
-      content: '';
-      position: absolute;
-      inset: 22px;
-      border-radius: 50%;
-      background: radial-gradient(circle, #c084fc, #7c3aed);
-    }
-    .modal-box, .modal-box h2, .modal-box .sub, .work-item, .work-item h3, .work-item p, .empty-state { user-select: none; }
-    .link-card, .link-card * { user-select: none; }
-
     /* ── rain overlay ── */
     .rain {
       position: fixed; inset: 0; z-index: 1;
@@ -348,4 +325,5 @@
       text-align: center; padding: 36px 0;
       color: var(--muted); font-size: 0.88rem; line-height: 2;
     }
+
     .empty-state i { font-size: 1.8rem; display: block; margin-bottom: 12px; opacity: 0.35; }
