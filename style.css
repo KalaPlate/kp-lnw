@@ -174,6 +174,7 @@
 
     /* ── link cards ── */
     .links {
+      user-select: none;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -327,3 +328,4 @@
     }
 
     .empty-state i { font-size: 1.8rem; display: block; margin-bottom: 12px; opacity: 0.35; }
+
