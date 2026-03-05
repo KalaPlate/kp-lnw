@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KP-LNW</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- blobs -->
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+
+    <!-- rain -->
+    <div class="rain" id="rain"></div>
+
+    <!-- decorative elements -->
+    <div class="moon"></div>
+    <div class="vinyl"></div>
+
+    <!-- main content -->
+    <div class="page">
+
+        <div class="avatar">
+        <div class="avatar-inner">
+            <img src="zns.jpg" alt="KP">
+        </div>
+        </div>
+
+        <h1 class="name">أحنف</h1>
+        <p class="tagline">links &amp; works</p>
+
+        <div class="links">
+
+        <a href="https://www.facebook.com/knot.ahnaf/" class="link-card facebook" target="_blank">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <span class="label">Facebook</span>
+            <span class="pill">Follow</span>
+        </a>
+
+        <a href="https://www.youtube.com/@kalaplate" class="link-card youtube" target="_blank">
+            <div class="icon"><i class="fab fa-youtube"></i></div>
+            <span class="label">YouTube</span>
+            <span class="pill">Watch</span>
+        </a>
+
+        <a href="https://www.snapchat.com/add/knot_ahnaf" class="link-card snapchat" target="_blank">
+            <div class="icon"><i class="fab fa-snapchat-ghost"></i></div>
+            <span class="label">Snapchat</span>
+            <span class="pill">Add me</span>
+        </a>
+
+        <div class="link-card works" onclick="openWorks()">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <span class="label">Works</span>
+            <span class="pill">View</span>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- Works modal -->
+    <div class="modal-overlay" id="worksModal">
+        <div class="modal-box">
+        <button class="close-btn" onclick="closeWorks()"><i class="fas fa-times"></i></button>
+        <h2>KP-Works</h2>
+        <p class="sub">Latest Creations</p>
+        <div id="worksContainer"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
